@@ -96,5 +96,10 @@
         font-family: 'Inter', sans-serif;
         font-size: 15px;
         color: #3D3D3D;
+        transition: 0.3s;
+    }
+
+    .selectnav a:hover {
+        color: #6b6b6b;
     }
 }

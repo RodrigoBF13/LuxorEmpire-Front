@@ -2,10 +2,8 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    width: 100%;
     height: 298px;
     align-items: center;
-    overflow: hidden;
 
     #botaoesq {
         position: absolute;
@@ -23,6 +21,7 @@
         transition: 0.2s;
         margin: 0px 25px;
         left: 0;
+        cursor: pointer;
     }
 
     #botaoesq:active {
@@ -50,6 +49,7 @@
         transition: 0.2s;
         margin: 0px 25px;
         right: 0;
+        cursor: pointer;
     }
     
     #botaodir:active {
@@ -60,5 +60,16 @@
         width: 42px;
         height: 42px;
         transform: rotateZ(180deg);
+    }
+
+    #banner {
+        width: 100%;
+        height: 100%;
+    }
+
+    #banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

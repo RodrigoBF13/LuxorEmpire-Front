@@ -1,0 +1,48 @@
+.comp-produto-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        transform: translateY(-3px);
+
+        img {
+            width: 200px;
+        }
+    }
+
+    img {
+        width: 185px;
+        transition: 0.3s;
+        border-bottom: 1px solid #3B3B3B;
+    }
+
+    h1 {
+        color: #3B3B3B;
+        text-align: center;
+        font-size: 18px;
+        font-weight: light;
+    }
+
+    h4 {
+        color: #3B3B3B;
+        text-align: center;
+        font-size: 15px;
+        font-weight: light;
+        text-decoration:line-through;
+        margin-top: 15px;
+    }
+
+    h3 {
+        color: #000;
+        text-align: center;
+        font-size: 20px;
+        font-weight: light;
+    }
+}

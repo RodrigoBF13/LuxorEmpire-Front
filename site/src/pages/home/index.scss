@@ -2,5 +2,174 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+
+
+    .blockssect {
+        display: flex;
+        flex-direction: row;
+        margin: 50px 0px;
+        gap: 140px;
+        justify-content: center;
+    }
+
+    .blockssect a {
+        width: 281px;
+        height: 281px;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 20px 3px #0000003a;
+        transition: 0.3s;
+    }
+
+    .blockssect a:hover {
+        transform: translateY(-3px);
+    }
+
+    .blockssect h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #3D3D3D;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .blockssect img {
+        width: 281px;
+        border-radius: 5px;
+        height: 281px;
+    }
+    
+    .prod {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 50px 0px;
+        align-items: center;
+        position: relative;
+    }
+
+    .prod > h1 {
+        font-weight: bold;
+        font-size: 24px;
+        color: #3B3B3B;
+    }
+
+    .prod > p {
+        font-weight: regular;
+        font-size: 16px;
+        color: #3B3B3B;
+    }
+
+    .produtos {
+        display: flex;
+        flex-direction: row;
+        height: 483px;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .botao-esquerda {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        box-shadow: 0px 4px 4px 0px #0000002f;
+        background-color: transparent;
+        border-radius: 100%;
+        border: none;
+        z-index: 10;
+        transition: 0.2s;
+        margin: 0px 25px;
+        left: 30px;
+        cursor: pointer;
+    }
+
+    .botao-esquerda img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .botao-esquerda:active {
+        transform: translateX(-2px);
+    }
+
+    .botao-direita {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        box-shadow: 0px 4px 4px 0px #0000002f;
+        background-color: transparent;
+        border-radius: 100%;
+        border: none;
+        z-index: 10;
+        transition: 0.2s;
+        margin: 0px 25px;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    .botao-direita img {
+        width: 42px;
+        height: 42px;
+        transform: rotateZ(180deg);
+    }
+
+    .botao-direita:active {
+        transform: translateX(2px);
+    }
+
+    .pacotes {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 50px 0px;
+        align-items: center;
+        position: relative;
+
+        .produtos {
+            display: flex;
+            flex-direction: row;
+            height: 483px;
+            align-items: center;
+            gap: 100px;
+        }
+    }
+
+    .pacotes h1 {
+        font-weight: bold;
+        font-size: 24px;
+        color: #3B3B3B;
+    }
+
+    .pacotes button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 203px;
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid #959595;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    .pacotes button:hover {
+        box-shadow: 0px 4px 5px 0px #00000031;
+    }
+
+    hr {
+        width: 90%;
+        align-self: center;
+    }
 }

@@ -10,7 +10,7 @@ export default function CompBanner() {
                 <img src="/assets/images/home/Seta.png" alt="Butão Trocar" />
             </button>
             
-            <Link to='/'>
+            <Link to='/' id='banner'>
                 <img src="/assets/images/home/RolexLuxor2.png" alt="Imagem Banner" />
             </Link>
 
