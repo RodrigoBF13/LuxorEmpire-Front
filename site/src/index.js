@@ -6,14 +6,14 @@ import './index.scss';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 //Importação de Páginas!
-import HomePage from './pages/home';
+import PaginaLanding from './pages/site/landing';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route path='/' element={<PaginaLanding />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
