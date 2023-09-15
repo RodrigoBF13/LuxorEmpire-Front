@@ -7,6 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 //Importação de Páginas!
 import PaginaLanding from './pages/site/landing';
+import AdmCentral from './pages/adm/central';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<PaginaLanding />} />
+        <Route path='/adm' element={<AdmCentral />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
