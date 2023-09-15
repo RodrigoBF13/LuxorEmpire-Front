@@ -39,6 +39,7 @@
     #logoadm {
         height: 150px;
         margin-top: 20px;
+        margin-bottom: 40px;
     }
 
     .btmn {
@@ -50,6 +51,10 @@
         font: 32px "Bebas Neue";
         color: #000;
         margin: 10px 0px;
+    }
+
+    .btmn:hover {
+        text-decoration: underline;
     }
 
     .btmn img {
