@@ -1,6 +1,7 @@
 import './index.scss';
 
 import CompCabecalho from '../../../components/site/cabecalho';
+import CompRodape from '../../../components/site/rodape';
 
 import { Link } from 'react-router-dom';
 
@@ -60,6 +61,7 @@ export default function PaginaLanding() {
             </section>
 
             <Link to='' id='bannerrdp'></Link>
+            <CompRodape />
         </div>
     )
 }
