@@ -24,6 +24,11 @@
         text-decoration: none;
         font: 20px "Bebas Neue";
         color: #3D3D3D;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: #666666;
     }
 
     #ltblock {

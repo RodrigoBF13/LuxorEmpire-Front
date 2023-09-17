@@ -1,8 +1,28 @@
 import './index.scss';
+import { useState } from 'react';
+import LoginUser from '../user-login';
+import RegisterUser from '../user-register';
 
 import {Link} from 'react-router-dom'
 
 export default function CompCabecalho() {
+    const [mostrarComponente1, setMostrarComponente1] = useState(true);
+
+    const trocarComponente = () => {
+        setMostrarComponente1(!mostrarComponente1);
+    };
+
+
+
+    const [abrirRegistro, setAbrirRegistro] = useState(false);
+
+    const abrirReg = () => {
+        setAbrirRegistro(true);
+    }
+
+    const fecharReg = () => {
+        setAbrirRegistro(false);
+    }
 
     return(
         <div className="comp-cabecalho">
@@ -16,20 +36,20 @@ export default function CompCabecalho() {
                 <Link to='/'><img src="/assets/images/cabecalho/Logo.svg" alt="Logo" /></Link>
 
                 <div id='buttons-menu'>
-                    <Link to='/'>
+                    <button onClick={abrirReg}>
                         <img src="/assets/images/cabecalho/Usuario.svg" alt="UserIcon" />
                         Minha Conta
-                    </Link>
+                    </button>
 
-                    <Link to='/'>
+                    <button>
                         <img src="/assets/images/cabecalho/Compras.svg" alt="ComprasIcon" />
                         Meu Carrinho
-                    </Link>
+                    </button>
 
-                    <Link to='/'>
+                    <button>
                         <img src="/assets/images/cabecalho/Suporte.svg" alt="SupportIcon" />
                         Suporte
-                    </Link>
+                    </button>
                 </div>
             </div>  
             <nav id='navegation-bar'>
@@ -39,6 +59,15 @@ export default function CompCabecalho() {
                 <Link to='/'>RELÓGIOS</Link>
                 <Link to='/'>LANÇAMENTOS</Link>
                 <Link to='/'>MASCULINO</Link>
+                    {mostrarComponente1 
+                        ? (
+                            <RegisterUser isOpen={abrirRegistro} onClose={fecharReg} trocar={trocarComponente}/>
+                            
+                        ) 
+                        : (
+                            <LoginUser isOpen={abrirRegistro} onClose={fecharReg} trocar={trocarComponente}/>
+                        )
+                    }
             </nav>
         </div>
     )

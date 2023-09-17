@@ -69,7 +69,7 @@
         gap: 47px;
     }
 
-    #buttons-menu a {
+    #buttons-menu button {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -77,6 +77,10 @@
         text-decoration: none;
         font: 16px 'bebas neue';
         color: #3B3B3B;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
     }
 
     #buttons-menu img {
@@ -98,5 +102,10 @@
         font: 17px 'inter';
         color: #3D3D3D;
         text-decoration: none;
+        transition: 0.2s;
+    }
+
+    #navegation-bar a:hover {
+        color: #666666;
     }
 }
