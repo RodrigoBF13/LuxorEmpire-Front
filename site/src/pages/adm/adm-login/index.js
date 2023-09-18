@@ -6,27 +6,27 @@ export default function AdmLogin() {
         <div className="pagina-adm-login">
             <article>
                 <div className='leftside'>
-                    <h1>Bem vindo de Volta!</h1>
-                    <img src="" alt="" />
+                    <h1>Bem vindo de volta!</h1>
+                    <img src="/assets/images/adm/Computer.svg" alt="" />
                 </div>
 
-                <div>
+                <div className='right-side'>
                     <h1>Login</h1>
 
                     <div>
-                        <label></label>
+                        <label>Nome de Usuário</label>
                         <input type="text" />
                     </div>
 
-                    <div>
-                        <label></label>
+                    <div className='btlg'>
+                        <label>Senha</label>
                         <div>
                             <input type="text" />
-                            <button><img src="" alt="" /></button>
+                            <button><img src="/assets/images/adm/5062877.svg" alt="" /></button>
                         </div>
                     </div>
 
-                    <button>Login</button>
+                    <button>LOGIN</button>
                 </div>
             </article>
         </div>

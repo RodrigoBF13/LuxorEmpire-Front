@@ -7,8 +7,8 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 //Importação de Páginas!
 import PaginaLanding from './pages/site/landing';
-import AdmCentral from './pages/adm/central';
-import AdmLogin from './pages/adm/login';
+import AdmCentral from './pages/adm/adm-central';
+import AdmLogin from './pages/adm/adm-login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
