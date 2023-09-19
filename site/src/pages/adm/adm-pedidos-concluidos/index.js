@@ -6,7 +6,7 @@ export default function AdmPedidosConcluidos() {
 
     return(
     <div className="adm-pagina-pedidos-concluidos">
-
+        <CompMenuBar />
     </div>
     )
 }
