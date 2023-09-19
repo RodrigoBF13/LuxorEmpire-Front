@@ -16,8 +16,8 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<PaginaLanding />} />
-        <Route path='/adm' element={<AdmCentral />} />
-        <Route path='/adm/login' element={<AdmLogin />} />
+        <Route path='/adm/central' element={<AdmCentral />} />
+        <Route path='/adm' element={<AdmLogin />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
